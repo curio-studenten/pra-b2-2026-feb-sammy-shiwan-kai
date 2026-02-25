@@ -108,6 +108,13 @@ article h2{
   background-position: center;
   background-size: cover;
   text-align: center;
+  text-shadow: 
+  0 0 0 #FCFCFC,
+  -1px -1px 0 #FCFCFC,  
+  1px -1px 0 #FCFCFC,
+  -1px 1px 0 #FCFCFC,
+  1px 1px 0 #FCFCFC;
+
 }
 article h2.fun-for-family{
   background-image: url('../images/family-fun-george-arthur-pflueger.jpg');
@@ -149,6 +156,7 @@ button{
   border: 2px solid #FCFCFC;
   color: #000000;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .payment-option{
@@ -201,7 +209,8 @@ footer{
   }
 
   .row{
-    flex-direction: column;
+    flex-direction: row-reverse;
+    
   }
   .sidy-by-side{
     flex-direction: column;
