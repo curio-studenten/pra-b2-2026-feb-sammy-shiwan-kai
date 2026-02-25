@@ -107,15 +107,9 @@ article h2{
   border-left: none;
   background-position: center;
   background-size: cover;
-  text-align: center;
-  text-shadow: 
-  0 0 0 #FCFCFC,
-  -1px -1px 0 #FCFCFC,  
-  1px -1px 0 #FCFCFC,
-  -1px 1px 0 #FCFCFC,
-  1px 1px 0 #FCFCFC;
-
+  text-align: center; 
 }
+
 article h2.fun-for-family{
   background-image: url('../images/family-fun-george-arthur-pflueger.jpg');
 }
@@ -187,6 +181,12 @@ footer{
   display: block;
 }
 
+  .row{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row: span 2;
+}
+
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
@@ -208,15 +208,14 @@ footer{
     width: 256px;
   }
 
-  .row{
-    flex-direction: row-reverse;
+
     
   }
   .sidy-by-side{
     flex-direction: column;
     align-items: center;
   }
-}
+
 
 /*
   help! Het lettertype wordt om een of andere reden niet goed geladen... Misschien heeft het iets met het pad naar de fonts te maken?
@@ -260,4 +259,16 @@ to   { opacity: 1; }
 @-o-keyframes fadein {
 from { opacity: 0; }
 to   { opacity: 1; }
+}
+
+.emphasize {
+    border-left: 5px solid #27AE60;
+    box-shadow: 1px 0 5px #27AE60;
+    padding: 1em;
+}
+
+.emphasize h2 {
+    margin: 0;
+    border-left: none;
+    text-align: center;
 }
